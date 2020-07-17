@@ -2,7 +2,7 @@
 
 
 
-    <div class="card" *ngFor="let item of items">
+    <div (click)="verArtista( item )" class="card puntero" *ngFor="let item of items">
       <img [src]="item.images | noimage" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title"> {{ item.name }} </h5>
