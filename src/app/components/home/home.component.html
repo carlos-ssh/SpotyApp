@@ -1,12 +1,1 @@
-<div class="card-columns">
-
-
-
-    <div class="card" *ngFor="let cancion of nuevasCanciones">
-      <img [src]="cancion.images | noimage" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title"> {{ cancion.name }} </h5>
-        <span href="#" class="badge badge-primary" *ngFor="let artista of cancion.artists"> {{ artista.name }} </span>
-      </div>
-    </div>
-</div>
+<app-tarjetas [items]="nuevasCanciones"></app-tarjetas>
