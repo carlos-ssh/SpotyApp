@@ -1,1 +1,3 @@
-<app-tarjetas [items]="nuevasCanciones"></app-tarjetas>
+<app-loading *ngIf="loading" class="m-5"></app-loading>
+
+<app-tarjetas [items]="nuevasCanciones" *ngIf="!loading"></app-tarjetas>
